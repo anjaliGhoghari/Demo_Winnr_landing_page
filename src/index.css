@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  *{
+      @apply box-border m-0 p-0;
+  }
+}
+@layer components {
+  .btn-green {
+    @apply gap-3 px-6 py-4 bg-darkGreen border text-perrotGreen border-perrotGreen rounded-2xl font-bold text-base cursor-pointer transition-all duration-300;
+    
+  }
+}
