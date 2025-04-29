@@ -7,7 +7,7 @@ function Footer() {
     return (
         <>
             <footer className=' pt-20 container relative m-auto '>
-            <div className='h-[70vh] aspect-[16/9] w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${FooterI})` }}>
+            <div className='h-[70vh] w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${FooterI})` }}>
                 <div className='flex justify-between'>
                     <div>
                         <a> <img className=' w-100 max-w-[118px] cursor-pointer mb-7' src={logo} /></a>
