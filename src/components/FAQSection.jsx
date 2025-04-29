@@ -38,7 +38,7 @@ function FAQSection() {
                             {FAQList.map((item, index) => (
                                 <div className='text-white text-3xl font-bold' key={index} >
                                     <div className='flex border-t border-gray-900   py-8 justify-between pr-8' onClick={() => ToggleFAQ(index)}>
-                                    <h3 className=' text-2xl'>{item.question}</h3>
+                                    <h3 className=' tracking-wide text-2xl'>{item.question}</h3>
                                         <img
                                             className={`transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
                                                 }`}
@@ -46,7 +46,7 @@ function FAQSection() {
                                             alt='Toggle Answer'
                                         />
                                     </div>
-                                    <div className={` items-center text-start text-2xl font-normal max-w-[660px] text-gray-500 overflow-hidden transition-all duration-500 ${openIndex === index ? 'max-h-96 opacity-100 mt-[-20px] ' : 'max-h-0 opacity-0'
+                                    <div className={` items-center text-start text-2xl font-normal max-w-[660px] text-gray-500 overflow-hidden transition-all duration-1000 ${openIndex === index ? 'max-h-96 opacity-100 mt-[-20px] ' : 'max-h-0 opacity-0'
                                         }`}>
                                         <p className='pb-4'>{item.answer}</p>
                                     </div>
