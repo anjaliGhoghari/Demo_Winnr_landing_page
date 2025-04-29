@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo.png';
 function Header() {
     return (
         <>
-            <header className=''>
+            <header>
                 <div className='container m-auto'>
                     <div className='flex justify-between text-center items-center p-6' >
                         <a href='#'><img className=' w-100 max-w-[118px] cursor-pointer' src={logo} alt='logo' /></a>
