@@ -14,6 +14,10 @@ export default {
         perrotGreen:'#5EFB7E',
         textGreen:'#103900',
         },
+
+        fontFamily: {
+        sf: ['SF Pro Rounded', 'sans-serif'],
+      },
     },
   },
   plugins: [],

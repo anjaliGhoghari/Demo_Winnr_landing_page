@@ -7,9 +7,55 @@
       @apply box-border m-0 p-0;
   }
 }
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./assets/fonts/SF-Pro-Rounded-Ultralight.otf') format('otf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
 @layer components {
+  .text-radiant-green {
+    @apply bg-gradient-to-b bg-clip-text text-transparent;
+    background-image: linear-gradient(to bottom, #5EFB7E, #ADFA3C);
+  }
   .btn-green {
-    @apply gap-3 px-6 py-4 bg-darkGreen border text-perrotGreen border-perrotGreen rounded-2xl font-bold text-base cursor-pointer transition-all duration-300;
-    
+    @apply px-6 py-4 font-bold border rounded-xl border-perrotGreen bg-darkGreen ;
   }
 }
