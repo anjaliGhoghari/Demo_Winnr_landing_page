@@ -9,7 +9,7 @@ import HIWCard4 from '../assets/images/HIWCard4.png'
 function HIWSection() {
     return (
         <>
-            <section className='container m-auto'>
+            <section className='container max-w-1440 m-auto'>
                 <div className=' py-20'>
                     <div className='flex justify-between'>
                         <div className='flex flex-col'>

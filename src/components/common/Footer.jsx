@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png';
 function Footer() {
     return (
         <>
-            <footer className=' pt-20 container relative m-auto '>
+            <footer className=' pt-20 container max-w-1440 relative m-auto '>
             <div className='h-[70vh] w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${FooterI})` }}>
                 <div className='flex justify-between'>
                     <div>
