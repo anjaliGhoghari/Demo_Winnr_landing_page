@@ -12,13 +12,20 @@ export default {
     },
     container: {
       center: true,
-      padding: {
-        DEFAULT: '96px',
-      }
+       padding: '96px',
+      screens: {
+        sm: '1344px',
+        md: '1344px',
+        lg: '1344px',
+        xl: '1344px',
+        '2xl': '1344px',
+      },
+     
+      
+
+      
     },
-    maxWidth: {
-      '1440': '1440px',
-    },
+    
       colors: {
         darkBg: '#060B0F',
         lightGray: '#737373',

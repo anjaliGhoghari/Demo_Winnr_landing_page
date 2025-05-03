@@ -11,14 +11,9 @@ function ContestFormatSection() {
     return (
         <>
             <section className=' container max-w-1440 m-auto'>
-                <div className=' py-20'>
-
-                    <div className='flex flex-col'>
-                        <h2 className='text-white text-[56px] font-bold'>Contest formats</h2>
-                        <p className='text-lightGray font-light text-lg'>High Tempo, High Stakes. Always Fresh.</p>
-                    </div>
+                
                     <div className='py-20'>
-                        <div className='flex gap-8'>
+                        <div className='flex gap-8 '>
                         <div
                                 className=" basis-1/2 h-[800px] rounded-[32px]"
                                 style={{ background: `linear-gradient(180deg, #5EFB7E 0%, #ADFA3C 100%)`, }}>
@@ -50,7 +45,7 @@ function ContestFormatSection() {
                             </div>
                        
                             <div
-                                className=" basis-1/2 h-[800px] rounded-[32px]"
+                                className=" basis-1/2   rounded-[32px]"
                                 style={{ background: 'linear-gradient(0deg, #00FED0 0%, #01A8ED 100%)' }}>
                                 <div className='pt-12 px-12'><h3 className=' text-[40px] font-bold'>
                                     Invite & Earn
@@ -76,7 +71,7 @@ function ContestFormatSection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </section>
         </>
     )

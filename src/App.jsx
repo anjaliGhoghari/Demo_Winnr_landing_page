@@ -1,6 +1,7 @@
 
 import './App.css'
 import ContestFormatSection from './components/ContestFormatSection'
+import ContestFormatsSection from './components/ContestFormatsSection'
 import FAQSection from './components/FAQSection'
 import HeroSection from './components/HeroSection'
 import HIWSection from './components/HIWSection'
@@ -15,6 +16,7 @@ function App() {
        <Layout>
         <HeroSection/>
         <HIWSection/>
+        <ContestFormatsSection/>
         <ContestFormatSection/>
         <WaitListSection/>
         <FAQSection/>
