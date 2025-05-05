@@ -29,7 +29,7 @@ function HeroSection() {
                             <p className="text-lightGray text-xl font-light mb-10 max-w-[518px] leading-7">
                                 Your instincts already follow the right tokens, trends, and memes. Now get rewarded for it.
                             </p>
-                            <a className="btn-green">
+                            <a className="btn-green" href="http://app.winnr.fun/">
                                 <span className="text-gradiant-green font-extrabold text-2xl">
                                     Browse Live Contests
                                 </span>

@@ -30,9 +30,9 @@ function Footer() {
                                     Quick Links
                                 </h3>
                                 <ul className='text-lightGray flex flex-col gap-3 font-light'>
-                                    <a><li>Docs</li></a>
+                                    <a href='https://winnr.gitbook.io/docs'><li>Docs</li></a>
                                     <a><li>Telegram</li></a>
-                                    <a><li>Twitter/X</li></a>
+                                    <a href='https://x.com/winnrdotfun'><li>Twitter/X</li></a>
                                 </ul>
                             </div>
 

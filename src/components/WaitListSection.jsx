@@ -24,8 +24,9 @@ function WaitListSection() {
                                 placeholder="Enter your email to join"
                                 className="bg-transparent outline-none flex-grow px-4 py-2 text-[#2C6043] font-medium text-base leading-9 placeholder-[#2C6043]"
                             />
+
                             <button className>
-                            <a className='btn-black mb-10 '>Join Waitlist</a>
+                            <a className='btn-black mb-10 ' href='https://www.winnr.fun/waitlist'>Join Waitlist</a>
                             </button>
                         </div>
                     </div>
