@@ -39,7 +39,7 @@ function FAQSection() {
                             {FAQList.map((item, index) => (
                                 <div className='text-white text-3xl font-bold' key={index} >
                                     <div className='flex border-t border-gray-900 py-12 justify-between ' onClick={() => ToggleFAQ(index)}>
-                                    <h3 className=' tracking-wide text-2xl'>{item.question}</h3>
+                                    <h3 className=' tracking-wide leading-3 text-2xl'>{item.question}</h3>
                                         <img
                                             className={`transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
                                                 }`}

@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../assets/images/Banner.png'
+import HeroImage from '../assets/images/HeroImage.png'
 import GridShadow from '../assets/images/GridShadow.png'
 import ShadowBlack from '../assets/images/ShadowBlack.png'
 
@@ -7,21 +7,21 @@ function HeroSection() {
     return (
         <>
             <section className="container relative w-full h-screen pb-20 overflow-hidden">
-  <div className="relative w-full h-full">
-    <img
-      src={GridShadow}
-      alt="grid"
-      className="absolute top-0 left-0 w-full h-auto mt-12 z-0"
-    />
-                    <div className="absolute top-90 w-full h-full z-10">
-                    
+                <div className="relative w-full h-full">
+                    <img
+                        src={HeroImage}
+                        alt="HeroImage"
+                        className="absolute  w-full h-auto z-0"
+                    />
+                    <div className="absolute top-[260px] w-full h-full z-10">
+
                         <img
                             src={ShadowBlack}
                             alt="shadow"
                             className="mx-auto w-full h-full absolute top-0 left-0 z-10 object-cover"
                         />
 
-                      
+
                         <div className="flex flex-col text-center items-center justify-center h-full relative z-20">
                             <h1 className="text-[80px] max-w-[802px] font-extrabold text-white mb-4 leading-none">
                                 Make the Right Picks Win Real Reward
