@@ -1,12 +1,12 @@
 
 import './App.css'
-import ContestFormatSection from './components/ContestFormatSection'
 import ContestFormatsSection from './components/ContestFormatsSection'
 import FAQSection from './components/FAQSection'
 import HeroSection from './components/HeroSection'
 import HIWSection from './components/HIWSection'
 import Layout from './components/layout/Layout'
 import WaitListSection from './components/WaitListSection'
+import WinnrXBotSection from './components/WinnrXBotSection'
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
         <HeroSection/>
         <HIWSection/>
         <ContestFormatsSection/>
-        <ContestFormatSection/>
+        <WinnrXBotSection/>
         <WaitListSection/>
         <FAQSection/>
 

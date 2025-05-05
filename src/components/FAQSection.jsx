@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import upAerrow from '../assets/images/SVG/arrow-down-s-line.svg' 
+import upAerrow from '../assets/icons/arrow-down-s-line.svg' 
 const FAQList = [
     {
         question: 'Is there any How do I win contests on Winnr?',

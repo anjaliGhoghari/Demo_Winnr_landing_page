@@ -39,7 +39,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className=' relative flex flex-col items-center text-center justify-center'>
-                        <img src={footer1} className=' absolute bottom-2 w-full max-w-[552px]' />
+                        <img src={footer1} className=' absolute bottom-2 w-f' />
                         <img src={footer2} />
 
                     </div>
