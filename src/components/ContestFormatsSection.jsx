@@ -4,7 +4,7 @@ function ContestFormatsSection() {
     
     return (
         <>
-            <section className=' container max-w-1440 m-auto'>
+            <section className=' container max-w-1440 m-auto' id='/contest-formats'>
                 <div className=' py-20'>
                     <div className='flex flex-col'>
                         <h2 className='text-white text-[56px] font-bold'>Contest formats</h2>

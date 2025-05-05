@@ -69,11 +69,10 @@ function HIWSection() {
     const sliderRef = useRef();
     const settings = {
         className: "slider variable-width",
-        centerMode: true,
+        centerMode: false,
         infinite: true,
-        
         slidesToShow: 1,
-    slidesToScroll: 1,
+       slidesToScroll: 1,
         speed: 500,
         dots: true,
        
@@ -100,7 +99,7 @@ function HIWSection() {
 
     return (
         <>
-            <section className=''>
+            <section className='' id='/how-it-works'>
                 <div className='py-20 container mx-auto'>
                     <div className=''>
                         <div className='flex justify-between items-center text-center'>
@@ -147,7 +146,7 @@ function HIWSection() {
                             <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: `linear-gradient(180deg, #10171D 0%, #024D78 100%)` }}>
                                 <div className="pt-12 px-12">
                                     <h3 className="text-white text-2xl font-semibold mb-2">Win USDC</h3>
-                                    <p className="text-[#8EABA9] text-xl font-light mb-5">Top performers take home real rewards..</p>
+                                    <p className="text-[#8EABA9] text-xl font-light mb-5">Top performers take home real rewards.</p>
                                 </div>
                                 <div className="flex items-end">
                                     <img className="w-full" src={HIWCard4} alt="Draft Your Picks" />

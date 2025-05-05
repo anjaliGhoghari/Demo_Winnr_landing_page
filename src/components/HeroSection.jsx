@@ -6,14 +6,14 @@ import ShadowBlack from '../assets/images/ShadowBlack.png'
 function HeroSection() {
     return (
         <>
-            <section className="container relative w-full h-screen pb-20 overflow-hidden">
+            <section className="container relative w-full h-screen pb-10 overflow-hidden" id='hero-section'>
                 <div className="relative w-full h-full">
                     <img
                         src={HeroImage}
                         alt="HeroImage"
                         className="absolute  w-full h-auto z-0"
                     />
-                    <div className="absolute top-[260px] w-full h-full z-10">
+                    <div className="absolute top-[200px] w-full h-full z-10">
 
                         <img
                             src={ShadowBlack}

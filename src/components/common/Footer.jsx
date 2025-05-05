@@ -31,7 +31,7 @@ function Footer() {
                                 </h3>
                                 <ul className='text-lightGray flex flex-col gap-3 font-light'>
                                     <a href='https://winnr.gitbook.io/docs'><li>Docs</li></a>
-                                    <a><li>Telegram</li></a>
+                                    <a href='https://t.me/winnrfun'><li>Telegram</li></a>
                                     <a href='https://x.com/winnrdotfun'><li>Twitter/X</li></a>
                                 </ul>
                             </div>

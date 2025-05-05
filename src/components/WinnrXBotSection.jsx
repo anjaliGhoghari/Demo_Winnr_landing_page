@@ -3,9 +3,11 @@ import RightCard from '../assets/images/RightCard.png'
 import leftCard from '../assets/images/leftCard.png'
 import addUser from '../assets/icons/user-add-fill.svg'
 import dvdFill from '../assets/icons/dvd-fill.svg'
-import stopCircle from '../assets/icons/stop-circle-fill.svg'
 import ghostSmile from '../assets/icons/ghost-smile-fill.svg'
-
+import earn from '../assets/icons/earn.svg'
+import leader from '../assets/icons/leader.svg'
+import rewards from '../assets/icons/rewards.svg'
+import live from '../assets/icons/live.svg'
 
 function WinnrXBotSection() {
     return (
@@ -30,15 +32,15 @@ function WinnrXBotSection() {
                                 </div>
                                 <div className='flex gap-3 flex-col -mt-3 mx-12 mb-12'>
                                     <div className='flex gap-1'>
-                                        <img src={addUser} />
+                                        <img src={live} />
                                         <p className=' text-2xl font-semibold'>The bot creates a live contest</p>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <img src={dvdFill} />
+                                        <img src={leader} />
                                         <p className=' text-2xl font-semibold'>Auto leaderboard in the thread</p>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <img src={stopCircle} />
+                                        <img src={rewards} />
                                         <p className=' text-2xl font-semibold'>Rewards are distributed after the results</p>
                                     </div>
                                 </div>
@@ -60,11 +62,11 @@ function WinnrXBotSection() {
                                         <p className=' text-2xl font-semibold'>Invite friends to contests</p>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <img src={dvdFill} />
+                                        <img src={earn} />
                                         <p className=' text-2xl font-semibold'>You earn 10% more credits</p>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <img src={stopCircle} />
+                                        <img src={dvdFill} />
                                         <p className=' text-2xl font-semibold'>They get a 5% boost too</p>
                                     </div>
                                 </div>
