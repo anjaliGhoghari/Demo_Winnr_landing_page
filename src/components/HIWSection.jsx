@@ -118,10 +118,10 @@ function HIWSection() {
                     <Slider ref={sliderRef} {...settings} className="mt-16 ">
 
                         <div style={{ width: 450 }} className="pr-8">
-                            <div className="rounded-[32px] overflow-hidden  h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #4B7802 0%, #003A68 100%)' }}>
+                            <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #4B7802 0%, #003A68 100%)' }}>
                                 <div className="pt-12 px-12">
                                     <h3 className="text-white text-2xl font-semibold mb-2">Choose a Contest</h3>
-                                    <p className="text-[#9FB68D] text-xl font-light mb-5">Select from tokens, ecosystems, memes, or real-world events.</p>
+                                    <p className="text-[#9FB68D] tracking-wider text-xl font-light mb-5">Select from tokens, ecosystems, memes, or real-world events.</p>
                                 </div>
                                 <div className="flex item-end">
                                     <img className="w-full" src={HIWCard1} alt="Choose a Contest" />
@@ -134,7 +134,7 @@ function HIWSection() {
                             <div className="rounded-[32px] overflow-hidden  h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #006849 0%, #78026C 100%)' }}>
                                 <div className="pt-12 px-12">
                                     <h3 className="text-white text-2xl font-semibold mb-2">Draft Your Picks</h3>
-                                    <p className="text-[#8EABA9] text-xl font-light mb-5">Allocate 100,000 in-game credits based on your conviction.</p>
+                                    <p className="text-[#8EABA9] tracking-wider  text-xl font-light mb-5">Allocate 100,000 in-game credits based on your conviction.</p>
                                 </div>
                                 <div className="flex items-end">
                                     <img className="w-full" src={HIWCard2} alt="Draft Your Picks" />
@@ -146,7 +146,7 @@ function HIWSection() {
                             <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: `linear-gradient(180deg, #10171D 0%, #024D78 100%)` }}>
                                 <div className="pt-12 px-12">
                                     <h3 className="text-white text-2xl font-semibold mb-2">Win USDC</h3>
-                                    <p className="text-[#8EABA9] text-xl font-light mb-5">Top performers take home real rewards.</p>
+                                    <p className="text-[#8EABA9] tracking-wider  text-xl font-light mb-5">Top performers take home real rewards.</p>
                                 </div>
                                 <div className="flex items-end">
                                     <img className="w-full" src={HIWCard4} alt="Draft Your Picks" />
@@ -159,7 +159,7 @@ function HIWSection() {
                             <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #006849 0%, #000 100%)' }}>
                                 <div className="pt-12 px-12">
                                     <h3 className="text-white text-2xl font-semibold mb-2">Track ROI Live</h3>
-                                    <p className="text-[#B0D9EA] text-xl font-light mb-5">We calculate returns based on real-time token performance.</p>
+                                    <p className="text-[#B0D9EA] tracking-wider  text-xl font-light mb-5">We calculate returns based on real-time token performance.</p>
                                 </div>
                                 <div className="flex item-end">
                                     <img className="w-full" src={HIWCard3} alt="Track ROI Live" />

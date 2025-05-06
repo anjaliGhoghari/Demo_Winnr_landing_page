@@ -18,7 +18,7 @@ function WaitListSection() {
                                 to the Game Layer of Crypto</h2>
                             <p className=' max-w-[443px] mt-3 text-2xl font-normal mb-[138px]'>Join the waitlist to compete, earn, and shape the future of attention-based rewards.</p>
                         </div>
-                        <div className=" bg-[#75CF49] rounded-3xl  flex items-center py-2 pl-6 pr-2 max-w-[500px]">
+                        <div className=" bg-[#75CF49] rounded-2xl  flex items-center py-2 pl-2 pr-2 max-w-[500px]">
                             <input
                                 type="email"
                                 placeholder="Enter your email to join"
