@@ -34,7 +34,7 @@ function FAQSection() {
             <section className='container max-w-1440 m-auto'>
                 <div className=' py-20'>
 
-                    <h2 className='text-white font-bold text-5xl mb-16'>FAQs</h2>
+                    <h2 className='text-white font-bold text-5xl mb-[72px]'>FAQs</h2>
                     <div>
                         {FAQList.map((item, index) => {
                             const isOpen = openIndex === index;
@@ -46,14 +46,14 @@ function FAQSection() {
                                         <div className='flex justify-between '  onClick={() => toggleOpen(index)}>
                                             <h3 className=' tracking-[1px] font-semibold text-[32px]'>{item.question}</h3>
                                             <img
-                                                className={`transition-all duration-9000 ${openIndex === index ? 'rotate-180' : ''
+                                                className={`transition-all duration-900 ${openIndex === index ? 'rotate-180' : ''
                                                     }`}
                                                 src={upAerrow}
                                                 alt='Toggle Answer'
                                             /></div>
                                        
                                         {isOpen && (
-                                            <p className="text-start text-2xl font-normal text-gray-500 overflow-hidden animate-fadeIn">
+                                            <p className="text-start text-2xl font-normal text-gray-500 animate-fadeIn">
                                                 {item.answer}
                                             </p>
                                         )}
