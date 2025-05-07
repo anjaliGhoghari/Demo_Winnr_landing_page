@@ -11,7 +11,7 @@ function ContestFormatsSection() {
                         <h2 className='text-white xs:tracking-[1px] text-[56px] xs:text-2xl font-bold'>Contest formats</h2>
                         <p className='text-lightGray xs:text-xs font-light text-lg'>High Tempo, High Stakes. Always Fresh.</p>
                     </div>
-                    <div> <video className=' w-full h-full' autoPlay loop muted >
+                    <div> <video className=' w-full h-full' autoPlay loop muted  playsInline  >
                     <source src={contestFormatsSectionMP4} type="video/mp4"  />
                     </video>
                     </div>

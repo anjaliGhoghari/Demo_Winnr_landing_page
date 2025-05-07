@@ -11,8 +11,8 @@ export default {
         xl: { max: "1279px" },
         lg: { max: "1023px" },
         md: { max: "767px" },
-        sm: { max: "639px" },
-        xs: { max: "393px" },
+        xs: { max: "639px" },
+        // xs: { max: "393px" },
       },
       container: {
         center: true,

@@ -7,7 +7,32 @@ import HIWCard3 from '../assets/images/HIWCard3.png'
 import HIWCard4 from '../assets/images/HIWCard4.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+const CardList = [
+    {
+        image: HIWCard1,
+        gradiant: 'linear-gradient(180deg, #4B7802 0%, #003A68 100%)',
+        title: 'Choose a Contest',
+        description: 'Select from tokens, ecosystems, memes, or real-world events.'
+    },
+    {
+        image: HIWCard2,
+        gradiant: 'linear-gradient(180deg, #006849 0%, #78026C 100%)',
+        title: 'Draft Your Picks',
+        description: 'Allocate 100,000 in-game credits based on your conviction.'
+    },
+    {
+        image: HIWCard3,
+        gradiant: 'linear-gradient(180deg, #10171D 0%, #024D78 100%)',
+        title: 'Win USDC',
+        description: 'Top performers take home real rewards.'
+    },
+    {
+        image: HIWCard4,
+        gradiant: 'linear-gradient(180deg, #006849 0%, #000 100%)',
+        title: 'Track ROI Live',
+        description: 'We calculate returns based on real-time token performance.'
+    }
+];
 
 
 function HIWSection() {
@@ -17,7 +42,8 @@ function HIWSection() {
     const PrevArrow = ({ onClick }) => (
 
         <button
-            className={`w-8 h-8 rounded-[9px] flex items-center justify-center shadow-md transition-colors duration-100 ${isActive ? 'bg-[#5EFB7E]' : 'bg-darkGreen'
+            className={`w-8 h-8 rounded-[9px] flex items-center justify-center shadow-md transition-colors duration-100 
+            ${isActive ? 'bg-[#5EFB7E]' : 'bg-darkGreen'
                 }`}
             onClick={() => {
                 setActiveArrow('prev');
@@ -42,7 +68,7 @@ function HIWSection() {
 
     const NextArrow = ({ onClick }) => {
         const isActive = activeArrow === 'next';
-    
+
         return (
             <button
                 className={`w-8 h-8 rounded-[9px] flex items-center justify-center shadow-md transition-colors duration-200 ${isActive ? 'bg-[#5EFB7E]' : 'bg-darkGreen'}`}
@@ -72,10 +98,10 @@ function HIWSection() {
         centerMode: false,
         infinite: true,
         slidesToShow: 1,
-       slidesToScroll: 1,
+        slidesToScroll: 1,
         speed: 500,
         dots: true,
-       
+
         arrows: false,
         variableWidth: true,
 
@@ -99,11 +125,12 @@ function HIWSection() {
 
     return (
         <>
+         
             <section className='' id='/how-it-works'>
-                <div className='py-20 container mx-auto'>
+                <div className='py-20 xs:py-12 container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
                     <div className=''>
                         <div className='flex justify-between items-center text-center'>
-                            <h2 className='text-white text-[56px] font-bold'>How it works</h2>
+                            <h2 className='text-white xs:text-2xl text-[56px] font-bold'>How it works</h2>
                             <div className='flex border border-darkGreen p-2 rounded-[14px] gap-2'>
 
                                 <PrevArrow onClick={() => sliderRef.current?.slickPrev()} />
@@ -111,63 +138,26 @@ function HIWSection() {
 
                             </div>
                         </div>
-                        <div><p className='text-lightGray font-light text-lg '>Play on Conviction, Not Charts.</p></div>
+                        <div><p className='text-lightGray  xs:text-xs font-light text-lg '>Play on Conviction, Not Charts.</p></div>
                     </div>
 
-        <div className='slider-container'>
-                    <Slider ref={sliderRef} {...settings} className="mt-16 ">
-
-                        <div style={{ width: 450 }} className="pr-8">
-                            <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #4B7802 0%, #003A68 100%)' }}>
-                                <div className="pt-12 px-12">
-                                    <h3 className="text-white text-2xl font-semibold mb-2">Choose a Contest</h3>
-                                    <p className="text-[#9FB68D] tracking-wider text-xl font-light mb-5">Select from tokens, ecosystems, memes, or real-world events.</p>
+                    <div className='slider-container xs:h-[280px]'>
+                        <Slider ref={sliderRef} {...settings} className="mt-16 xs:mt-8 ">
+                            {CardList.map((item, index) => (
+                                <div  key={index} className="pr-8 w-[300px] xs:w-[100px]">
+                                    <div className="rounded-[32px] overflow-hidden xs:w-[150px] xs:h-[284px] h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: item.gradiant }}>
+                                        <div className="pt-12 px-12 xs:pt-7 xs:px-7">
+                                            <h3 className="text-white text-2xl font-semibold mb-2 xs:text-base">{item.title}</h3>
+                                            <p className="text-[#9FB68D] max-w-[287px] tracking-wider text-xl font-light mb-5 xs:text-xs xs:max-w-[168px]">{item.description}</p>
+                                        </div>
+                                        <div className="flex items-end">
+                                            <img className="w-full xs:max-w-[239px]" src={item.image} alt={item.title} />
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="flex item-end">
-                                    <img className="w-full" src={HIWCard1} alt="Choose a Contest" />
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div style={{ width: 450 }} className="pr-8">
-                            <div className="rounded-[32px] overflow-hidden  h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #006849 0%, #78026C 100%)' }}>
-                                <div className="pt-12 px-12">
-                                    <h3 className="text-white text-2xl font-semibold mb-2">Draft Your Picks</h3>
-                                    <p className="text-[#8EABA9] tracking-wider  text-xl font-light mb-5">Allocate 100,000 in-game credits based on your conviction.</p>
-                                </div>
-                                <div className="flex items-end">
-                                    <img className="w-full" src={HIWCard2} alt="Draft Your Picks" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style={{ width: 450 }} className="pr-8">
-                            <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: `linear-gradient(180deg, #10171D 0%, #024D78 100%)` }}>
-                                <div className="pt-12 px-12">
-                                    <h3 className="text-white text-2xl font-semibold mb-2">Win USDC</h3>
-                                    <p className="text-[#8EABA9] tracking-wider  text-xl font-light mb-5">Top performers take home real rewards.</p>
-                                </div>
-                                <div className="flex items-end">
-                                    <img className="w-full" src={HIWCard4} alt="Draft Your Picks" />
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div style={{ width: 450 }} className="pr-8" >
-                            <div className="rounded-[32px] overflow-hidden h-[478px] min-w-[422px] flex flex-col justify-between" style={{ background: 'linear-gradient(180deg, #006849 0%, #000 100%)' }}>
-                                <div className="pt-12 px-12">
-                                    <h3 className="text-white text-2xl font-semibold mb-2">Track ROI Live</h3>
-                                    <p className="text-[#B0D9EA] tracking-wider  text-xl font-light mb-5">We calculate returns based on real-time token performance.</p>
-                                </div>
-                                <div className="flex item-end">
-                                    <img className="w-full" src={HIWCard3} alt="Track ROI Live" />
-                                </div>
-                            </div>
-                        </div>
-                    </Slider>
-</div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </section>
         </>

@@ -23,7 +23,8 @@ function HeroSection() {
 
 
                         <div className="flex flex-col text-center items-center justify-center h-full relative z-20">
-                            <h1 className="text-[80px] xs:text-[32px] xs:max-w-[357px] max-w-[802px] font-extrabold text-white mb-4 leading-none">
+                            <h1 className="text-[80px] xs:text-[32px]
+                            sm:text-[32px]  xs:max-w-[357px] max-w-[802px] font-extrabold text-white mb-4 leading-none">
                                 Make the Right Picks Win Real Reward
                             </h1>
                             <p className="text-lightGray text-xl xs:text-xs font-light mb-10 xs:mb-8 xs:max-w-[256px] max-w-[518px] leading-7">

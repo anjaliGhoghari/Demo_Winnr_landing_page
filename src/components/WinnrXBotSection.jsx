@@ -15,7 +15,7 @@ function WinnrXBotSection() {
             <section className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
                 
             <div className=' py-20 xs:py-12'>
-                        <div className='flex gap-8 xs:gap-[18px] sm:flex-col '>
+                        <div className='flex gap-8 xs:gap-[18px] xs:flex-col '>
                         <div
                                 className=" basis-1/2  rounded-[32px]"
                                 style={{ background: `linear-gradient(180deg, #5EFB7E 0%, #ADFA3C 100%)`, }}>
