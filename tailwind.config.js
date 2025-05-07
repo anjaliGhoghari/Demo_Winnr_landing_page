@@ -7,6 +7,26 @@ export default {
 
   theme: {
     extend: {
+      screens: {
+        xl: { max: "1279px" },
+        lg: { max: "1023px" },
+        md: { max: "767px" },
+        sm: { max: "639px" },
+        xs: { max: "393px" },
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '96px', 
+          xs:'18px',
+          sm: '18px',      
+          md: '96px',      
+          lg: '96px',    
+          xl: '96px',     
+          '2xl': '96px',   
+        },
+       
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(-5px)' },
@@ -16,22 +36,7 @@ export default {
       animation: {
         fadeIn: 'fadeIn 0.7s ease-out forwards',
       },
-      screens: {
-        '3xl': '1600px', // optional: for bigger screens
-      },
-      container: {
-        center: true,
-        padding: '96px',
-        screens: {
-          sm: '1344px',
-          md: '1344px',
-          lg: '1344px',
-          xl: '1344px',
-          '2xl': '1344px',
-        },
 
-      },
-      
       colors: {
         darkBg: '#060B0F',
         lightGray: '#737373',

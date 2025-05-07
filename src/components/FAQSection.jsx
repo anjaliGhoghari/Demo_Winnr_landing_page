@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import upAerrow from '../assets/icons/arrow-down-s-line.svg'
 const FAQList = [
     {
@@ -31,35 +32,38 @@ function FAQSection() {
     };
     return (
         <>
-            <section className='container max-w-1440 m-auto'>
-                <div className=' py-20'>
+             <section className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
+                <div className=' py-20 xs:py-12'>
 
-                    <h2 className='text-white font-bold text-5xl mb-[72px]'>FAQs</h2>
+                    <h2 className='text-white font-bold text-5xl xs:mb-7 mb-[72px] xs:text-2xl'>FAQs</h2>
                     <div>
                         {FAQList.map((item, index) => {
-                            const isOpen = openIndex === index;
+                           
                             return (
                                 <div key={index} className="group text-white text-3xl">
-                                    <div
-                                       
-                                        className=" items-center py-11 text-center border-t border-gray-900 cursor-pointer">
-                                        <div className='flex justify-between '  onClick={() => toggleOpen(index)}>
-                                            <h3 className=' tracking-[1px] font-semibold text-[32px]'>{item.question}</h3>
+                                    <div className="items-center py-11 xs:py-6 text-center border-t border-gray-900 cursor-pointer">
+                                        <div className="flex justify-between" onClick={() => toggleOpen(index)}>
+                                            <h3 className="tracking-[1px] xs:text-[12px] xs:leading-none xs:tracking-normal font-semibold text-[32px]">
+                                                {item.question}
+                                            </h3>
                                             <img
-                                                className={`transition-all duration-900 ${openIndex === index ? 'rotate-180' : ''
+                                                className={`transition-all duration-300 xs:max-w-[16px] ${openIndex === index ? "rotate-180" : ""
                                                     }`}
                                                 src={upAerrow}
-                                                alt='Toggle Answer'
-                                            /></div>
-                                       
-                                        {isOpen && (
-                                            <p className="text-start text-2xl font-normal text-gray-500 animate-fadeIn">
+                                                alt="Toggle Answer"
+                                            />
+                                        </div>
+                                        <div
+                                            className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                                                }`}
+                                        >
+                                            <p className="text-start xs:text-xs text-2xl font-normal text-gray-500 px-2  xs:px-0">
                                                 {item.answer}
                                             </p>
-                                        )}
+                                        </div>
                                     </div>
-
                                 </div>
+
                             );
                         })}
                     </div>
