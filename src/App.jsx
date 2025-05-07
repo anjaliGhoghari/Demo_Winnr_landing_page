@@ -15,7 +15,7 @@ function App() {
      
             <Layout>
               <HeroSection />
-              <HIWSection />
+              {/* <HIWSection /> */}
               <ContestFormatsSection />
               <WinnrXBotSection />
               <WaitListSection />
