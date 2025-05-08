@@ -24,7 +24,7 @@ function WaitListSection() {
                                 <input
                                     type="email"
                                     placeholder="Enter your email to join"
-                                    className="bg-transparent outline-none flex-grow px-4 xs:pr-0  py-2 text-[#2C6043] font-medium text-base leading-9 placeholder-[#2C6043] xs:text-xs"
+                                    className="bg-transparent outline-none flex-grow px-4 xs:pr-0  py-2 text-[#2C6043] font-medium text-base leading-9 placeholder-[#2C6043] xs:text-[10px]"
                                 />
 
                                 <button className>

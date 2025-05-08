@@ -126,7 +126,7 @@ function HIWSection() {
                     <div className=''>
                         <div className='flex justify-between items-center text-center'>
                             <h2 className='text-white xs:text-2xl text-[56px] font-bold'>How it works</h2>
-                            <div className='flex border border-darkGreen p-2 xs:p-1 rounded-[14px] xs:rounded-lg gap-2'>
+                            <div className='flex border border-darkGreen p-2 xs:p-1 rounded-[14px] xs:rounded-lg gap-2 xs:gap-1'>
 
                                 <PrevArrow onClick={() => sliderRef.current?.slickPrev()} />
                                 <NextArrow onClick={() => sliderRef.current?.slickNext()} />
@@ -139,7 +139,7 @@ function HIWSection() {
                     <div className='slider-container xs:h-[280px]'>
                         <Slider ref={sliderRef} {...settings} className="mt-16 xs:mt-8 ">
                             {CardList.map((item, index) => (
-                                <div key={index} className="pr-8 w-[300px]">
+                                <div key={index} className="pr-8 xs:pr-[18px] w-[300px]">
                                     <div className="rounded-[32px] overflow-hidden xs:w-[150px] xs:h-[284px] h-[478px] min-w-[422px] xs:min-w-[240px] flex flex-col justify-between" style={{ background: item.gradiant }}>
                                         <div className="pt-12 px-12 xs:pt-7 xs:px-7">
                                             <h3 className="text-white text-2xl font-semibold mb-2 xs:text-base">{item.title}</h3>

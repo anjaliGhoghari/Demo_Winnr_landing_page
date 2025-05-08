@@ -30,7 +30,7 @@ function WinnrXBotSection() {
                                 <div className='flex justify-center'>
                                     <img className='w-[90%] ' src={leftCard}></img>
                                 </div>
-                                <div className='flex gap-3 xs:gap-[8px] flex-col -mt-3 mx-12 xs:mx-7 mb-12 xs:mt-0 xs:mb-4'>
+                                <div className='flex gap-3 xs:gap-[8px] flex-col -mt-3 mx-12 xs:mx-7 mb-12 xs:mb-8 xs:mt-0 '>
                                     <div className='flex gap-1'>
                                         <img src={live} className='xs:max-w-[16px]' />
                                         <p className=' text-2xl xs:text-base xs:tracking-tightn xs:leading-none font-semibold'>The bot creates a live contest</p>
@@ -57,7 +57,7 @@ function WinnrXBotSection() {
                                 <div className='flex justify-center'>
                                     <img className='w-[90%] ' src={RightCard}></img>
                                 </div>
-                                <div className='flex gap-3 xs:gap-[8px] flex-col xs:mx-7 xs:mt-6 mt-10 xs:mb-4 mx-12'>
+                                <div className='flex gap-3 xs:gap-[8px] flex-col xs:mx-7 xs:mt-6 mt-10 xs:mb-8 mx-12'>
                                     <div className='flex gap-1'>
                                         <img src={addUser} className='xs:max-w-[16px]' />
                                         <p className=' text-2xl xs:text-base xs:tracking-tightn xs:leading-none font-semibold'>Invite friends to contests</p>
