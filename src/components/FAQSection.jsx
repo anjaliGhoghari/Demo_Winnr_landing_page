@@ -32,7 +32,7 @@ function FAQSection() {
     };
     return (
         <>
-             <section className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
+             <section className='container max-w-1440 xs:px-[18px] mx-auto '>
                 <div className=' py-20 xs:py-12'>
 
                     <h2 className='text-white font-bold text-5xl xs:mb-7 mb-[72px] xs:text-2xl'>FAQs</h2>

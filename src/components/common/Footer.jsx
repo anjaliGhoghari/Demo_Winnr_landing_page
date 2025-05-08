@@ -8,7 +8,7 @@ import footer2 from '../../assets/images/footer-2.png';
 function Footer() {
     return (
         <>
-        <footer className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto relative '>
+        <footer className='container max-w-1440 xs:px-[18px] mx-auto relative '>
             
                 <div >
                     <div className='flex justify-between xs:mb-[150px] mb-[300px]'>
@@ -21,7 +21,7 @@ function Footer() {
                                 <h3 className='text-white font-semibold text-2xl xs:text-xs mb-4 xs:mb-2'>
                                     Legal
                                 </h3>
-                                <ul className='text-lightGray xs:text-[10px] flex xs:gap-1 flex-col sm:gap-1 gap-3 font-light'>
+                                <ul className='text-lightGray xs:text-[10px] flex xs:gap-1 flex-col  gap-3 font-light'>
                                     <a><li>Terms & Conditions</li></a>
                                     <a><li>Privacy Policy</li></a>
                                 </ul>
@@ -30,7 +30,7 @@ function Footer() {
                                 <h3 className='text-white font-semibold xs:text-xs text-2xl  xs:mb-2 mb-4'>
                                     Quick Links
                                 </h3>
-                                <ul className='text-lightGray flex flex-col xs:text-[10px] gap-3 xs:gap-1 sm:gap-1 font-light'>
+                                <ul className='text-lightGray flex flex-col xs:text-[10px] gap-3 xs:gap-1 font-light'>
                                     <a href='https://winnr.gitbook.io/docs'><li>Docs</li></a>
                                     <a href='https://t.me/winnrfun'><li>Telegram</li></a>
                                     <a href='https://x.com/winnrdotfun'><li>Twitter/X</li></a>

@@ -8,8 +8,8 @@ function Header() {
     return (
         <>
             <header className='sticky z-50 top-0 bg-darkBg'>
-                <div className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
-                    <div className='flex justify-between text-center items-center py-6 sm:py-4' >
+                <div className='container max-w-1440 xs:px-[18px] mx-auto '>
+                    <div className='flex justify-between text-center items-center py-6' >
                     <Link to="hero-section" smooth={true} duration={700}><img className='w-100 max-w-[109px] xs:max-w-[54.5px] cursor-pointer' src={logo} alt='logo' /></Link>
                         <nav>
                             <ul className='  text-lightGray xs:text-[10px]   gap-7 xs:gap-1 flex cursor-pointer'>

@@ -18,20 +18,20 @@ function HeroSection() {
                         <img
                             src={ShadowBlack}
                             alt="shadow"
-                            className="mx-auto w-full h-full absolute top-0 left-0 z-10 object-cover"
+                            className="mx-auto w-full h-[97%] xs:h-auto absolute top-0 left-0 z-10 object-cover"
                         />
 
 
                         <div className="flex flex-col text-center items-center justify-center h-full relative z-20">
                             <h1 className="text-[80px] xs:text-[32px]
-                            sm:text-[32px]  xs:max-w-[357px] max-w-[802px] font-extrabold text-white mb-4 leading-none">
+                              xs:max-w-[357px] max-w-[802px] font-extrabold text-white mb-4 leading-none">
                                 Make the Right Picks Win Real Reward
                             </h1>
                             <p className="text-lightGray text-xl xs:text-xs font-light mb-10 xs:mb-8 xs:max-w-[256px] max-w-[518px] leading-7">
                                 Your instincts already follow the right tokens, trends, and memes. Now get rewarded for it.
                             </p>
                             <a className="btn-green" href="http://app.winnr.fun/">
-                                <span className="text-gradiant-green font-extrabold text-2xl xs:text-base sm:text-base">
+                                <span className="text-gradiant-green font-extrabold text-2xl xs:text-base ">
                                     Browse Live Contests
                                 </span>
                             </a>

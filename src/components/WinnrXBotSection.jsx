@@ -12,7 +12,7 @@ import live from '../assets/icons/live.svg'
 function WinnrXBotSection() {
     return (
         <>
-            <section className='container max-w-1440 xs:px-[18px] sm:px-4 mx-auto '>
+            <section className='container max-w-1440 xs:px-[18px]  mx-auto '>
                 
             <div className=' py-20 xs:py-12'>
                         <div className='flex gap-8 xs:gap-[18px] xs:flex-col '>

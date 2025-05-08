@@ -6,12 +6,19 @@ export default {
   ],
 
   theme: {
+    container: {
+    center: true,
+    screens: {
+      DEFAULT: '1344px',    // 👈 new default width for large screens
+    },
+    padding: {
+      DEFAULT: '96px',
+      xs: '18px',
+    },
+  },
     extend: {
       screens: {
-        xl: { max: "1279px" },
-        lg: { max: "1023px" },
-        md: { max: "767px" },
-        xs: { max: "639px" },
+        xs: { max: "678px" },
         // xs: { max: "393px" },
       },
       container: {
@@ -19,11 +26,10 @@ export default {
         padding: {
           DEFAULT: '96px', 
           xs:'18px',
-          sm: '18px',      
-          md: '96px',      
-          lg: '96px',    
-          xl: '96px',     
-          '2xl': '96px',   
+          // md: '96px',      
+          // lg: '96px',    
+          // xl: '96px',     
+          // '2xl': '96px',   
         },
        
       },
